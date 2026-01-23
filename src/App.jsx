@@ -66,7 +66,7 @@ function App() {
             <div className="footer-logos">
               <img src="/src/assets/images/DAEcn.png" alt="DAE" style={{ height: '24px' }} />
             </div>
-            <p>版本号-α.25.1220.1<br/>Github项目</p>
+            <p>版本号-α.26.0124.1<br/>Github项目</p>
             <p><a href="https://github.com/RejTech/rejmainsite">前往Github源码区</a></p>
             <p><a href="#">Apache2.0许可证 ——版权所有 锐机科技2025</a></p>
           </div>
