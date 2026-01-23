@@ -123,7 +123,7 @@ function Home() {
       </div>
       <div className="p-5 bg-body-tertiary rounded-3">
         <div className="container py-5">
-          <img alt="" height="150" src="/assets/images/rms-logo.svg" width="150" style={{ opacity: 0, animation: 'spinIn 1s ease-out forwards 1.2s, slowSpin 10s linear infinite 2.2s' }} />
+          <img alt="" height="150" src="/src/assets/images/rms-logo.svg" width="150" style={{ opacity: 0, animation: 'spinIn 1s ease-out forwards 1.2s, slowSpin 10s linear infinite 2.2s' }} />
           <h1 className="display-5">欢迎来到锐机综合站</h1>
           <p className="fs-4">这里为你提供综合性的锐机信息</p>
           <Link className="btn btn-primary" to="/changelog">更新日志(CHANGELOG)</Link>

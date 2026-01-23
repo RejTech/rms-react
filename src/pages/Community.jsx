@@ -30,7 +30,7 @@ function Community() {
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="d-flex align-items-center">
-                    <img height="40" src="/assets/images/dy.jpeg" width="40" className="me-3" style={{ borderRadius: '10px', objectFit: 'cover', objectPosition: 'center' }} />
+                    <img height="40" src="/src/assets/images/dy.jpeg" width="40" className="me-3" style={{ borderRadius: '10px', objectFit: 'cover', objectPosition: 'center' }} />
                     <h5 className="card-title">Douyin</h5>
                   </div>
                   <a className="btn btn-primary" href="https://www.douyin.com/user/MS4wLjABAAAAqmDDA-v1xWHl-rQptifCBioq8eR6UeFsuq8fMHo-qXY">立即前往</a>
