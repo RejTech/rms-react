@@ -64,7 +64,7 @@ function App() {
         <footer className="footer">
           <div className="footer-content">
             <div className="footer-logos">
-              <img src="/src/assets/images/DAEcn.png" alt="DAE" style={{ height: '24px' }} />
+              <img src="/assets/images/DAEcn.png" alt="DAE" style={{ height: '24px' }} />
             </div>
             <p>版本号-α.26.0124.1<br/>Github项目</p>
             <p><a href="https://github.com/RejTech/rejmainsite">前往Github源码区</a></p>
