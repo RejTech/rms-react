@@ -18,7 +18,7 @@ function Navigation() {
     <nav className="main-nav">
       <div className="nav-container">
         <Link className="nav-brand" to="/">
-          <img alt="" height="25" src="/src/assets/images/rms-logo.svg" width="25" />
+          <img alt="" height="25" src="/assets/images/rms-logo.svg" width="25" />
           锐机综合站
         </Link>
         <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -64,7 +64,7 @@ function App() {
         <footer className="footer">
           <div className="footer-content">
             <div className="footer-logos">
-              <img src="/src/assets/images/DAEcn.png" alt="DAE" style={{ height: '24px' }} />
+              <img src="/assets/images/DAEcn.png" alt="DAE" style={{ height: '24px' }} />
             </div>
             <p>版本号-α.25.1220.1<br/>Github项目</p>
             <p><a href="https://github.com/RejTech/rejmainsite">前往Github源码区</a></p>
