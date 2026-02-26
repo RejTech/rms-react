@@ -8,6 +8,7 @@ import Video from './pages/Video.jsx'
 import Changelog from './pages/Changelog.jsx'
 import License from './pages/License.jsx'
 import { useState } from 'react'
+import LiquidGlass from 'liquid-glass-react'
 import './App.css'
 
 function Navigation() {
@@ -26,14 +27,86 @@ function Navigation() {
         </button>
         <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-menu">
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/" onClick={() => setIsMenuOpen(false)}>主页</Link></li>
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/community' ? 'active' : ''}`} to="/community" onClick={() => setIsMenuOpen(false)}>社交媒体账号</Link></li>
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/live' ? 'active' : ''}`} to="/live" onClick={() => setIsMenuOpen(false)}>直播</Link></li>
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/video' ? 'active' : ''}`} to="/video" onClick={() => setIsMenuOpen(false)}>视频</Link></li>
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about" onClick={() => setIsMenuOpen(false)}>关于RMS锐机主站</Link></li>
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/changelog' ? 'active' : ''}`} to="/changelog" onClick={() => setIsMenuOpen(false)}>更新日志</Link></li>
-            <li className="nav-item"><Link className={`nav-link ${location.pathname === '/license' ? 'active' : ''}`} to="/license" onClick={() => setIsMenuOpen(false)}>许可证</Link></li>
-            <li className="nav-item"><a className="nav-link" href="https://rfs.rjtec.site" onClick={() => setIsMenuOpen(false)}>锐机文件站</a></li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/" onClick={() => setIsMenuOpen(false)}>主页</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/community' ? 'active' : ''}`} to="/community" onClick={() => setIsMenuOpen(false)}>社交媒体</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/live' ? 'active' : ''}`} to="/live" onClick={() => setIsMenuOpen(false)}>直播</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/video' ? 'active' : ''}`} to="/video" onClick={() => setIsMenuOpen(false)}>视频</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about" onClick={() => setIsMenuOpen(false)}>关于</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/changelog' ? 'active' : ''}`} to="/changelog" onClick={() => setIsMenuOpen(false)}>更新</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <Link className={`nav-link ${location.pathname === '/license' ? 'active' : ''}`} to="/license" onClick={() => setIsMenuOpen(false)}>许可</Link>
+              </LiquidGlass>
+            </li>
+            <li className="nav-item">
+              <LiquidGlass 
+                cornerRadius={9999}
+                padding="6px 10px"
+                elasticity={0.6}
+                blurAmount={0.1}
+              >
+                <a className="nav-link" href="https://rfs.rjtec.site" onClick={() => setIsMenuOpen(false)}>文件站</a>
+              </LiquidGlass>
+            </li>
           </ul>
 
         </div>

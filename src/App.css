@@ -176,6 +176,10 @@ main {
 .nav-links {
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 0;
+  height: 40px;
 }
 
 .nav-menu {
@@ -183,30 +187,36 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1rem;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-item {
   opacity: 0;
   animation: fadeInUp 0.5s ease forwards;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-link {
   text-decoration: none;
   color: #213547;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  transition: all 0.25s ease;
+  padding: 0;
+  border-radius: 0;
+  transition: none;
 }
 
 .nav-link:hover {
-  background-color: #e9ecef;
+  /* 移除原来的hover效果，使用液态玻璃效果 */
 }
 
 .nav-link.active {
-  background-color: #007bff;
-  color: white;
+  /* 移除原来的active效果，使用液态玻璃效果 */
 }
 
 .nav-actions {
@@ -961,7 +971,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -974,7 +984,9 @@ img {
 }
 
 .notice-content {
-  background-color: white;
+  background-color: rgba(248, 249, 250, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -982,6 +994,7 @@ img {
   width: 90%;
   text-align: center;
   animation: scaleIn 0.3s ease forwards;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .notice-content.closing {
